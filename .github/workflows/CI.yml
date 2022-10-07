@@ -1,5 +1,10 @@
+# MagdyelAC
 name: CI Angular app through GitHub Actions
-on: push
+on: 
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
 jobs:
   build:
     runs-on: ubuntu-latest
